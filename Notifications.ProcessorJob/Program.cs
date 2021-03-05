@@ -1,9 +1,12 @@
 ﻿using MassTransit;
 using Microsoft.Extensions.Hosting;
 using Notifications.Processor;
-using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
+using Notifications.Mappers;
+using MediatR;
+using Notifications.Application.Handler;
+using Notifications.Application.Behaviors;
 
 namespace Notifications.ProcessorJob
 {
@@ -14,6 +17,12 @@ namespace Notifications.ProcessorJob
             await Host.CreateDefaultBuilder(args) 
                 .ConfigureServices(services =>
             {
+                // automapper
+                services.AddAutoMapper(typeof(InternalProfile).Assembly);
+                services.AddMediatR(typeof(UserAddedCommandHandler).Assembly);
+
+                services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuditBehavior<,>));
+
                 services.AddHostedService<MassTransitHostedService>();
                 services.AddScoped<NewUserAddedConsumer>();
                 services.AddMassTransit(configure =>

@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notifications.ProcessorJob"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notifications.Messages", "Notifications.Messages\Notifications.Messages.csproj", "{CAAB55C2-4863-4EAC-A1D6-659D17E6E167}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications.Mappers", "Notifications.Mappers\Notifications.Mappers.csproj", "{1C1C3D87-67AE-4562-BC32-C0A2F142B3D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notifications.Mappers", "Notifications.Mappers\Notifications.Mappers.csproj", "{1C1C3D87-67AE-4562-BC32-C0A2F142B3D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications.Application", "Notifications.Application\Notifications.Application.csproj", "{7603966E-70AB-4EA5-AFBE-031B4CBD7E6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notifications.Application", "Notifications.Application\Notifications.Application.csproj", "{7603966E-70AB-4EA5-AFBE-031B4CBD7E6E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DE0F78D5-ED7A-4493-BB9F-2262FABE8A93}"
 EndProject
@@ -28,6 +28,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{69C0D1C1-041B-4645-A4D1-367ACBB7C6AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B6B8B8D5-8531-441D-BBE1-E00BDEB23DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications.Domain", "Notifications.Domain\Notifications.Domain.csproj", "{212DC7DD-CBC8-49C4-A204-7051932513FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications.Data", "Notifications.Data\Notifications.Data.csproj", "{C7B4B776-3E77-4E1C-B80E-950C2A39F3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications.Data.Abstractions", "Notifications.Data.Abstractions\Notifications.Data.Abstractions.csproj", "{B38401B7-FF4A-480D-B6AD-DDB48B20FDBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{7603966E-70AB-4EA5-AFBE-031B4CBD7E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7603966E-70AB-4EA5-AFBE-031B4CBD7E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7603966E-70AB-4EA5-AFBE-031B4CBD7E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212DC7DD-CBC8-49C4-A204-7051932513FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212DC7DD-CBC8-49C4-A204-7051932513FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212DC7DD-CBC8-49C4-A204-7051932513FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212DC7DD-CBC8-49C4-A204-7051932513FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B4B776-3E77-4E1C-B80E-950C2A39F3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B4B776-3E77-4E1C-B80E-950C2A39F3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B4B776-3E77-4E1C-B80E-950C2A39F3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B4B776-3E77-4E1C-B80E-950C2A39F3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38401B7-FF4A-480D-B6AD-DDB48B20FDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38401B7-FF4A-480D-B6AD-DDB48B20FDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38401B7-FF4A-480D-B6AD-DDB48B20FDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38401B7-FF4A-480D-B6AD-DDB48B20FDBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +93,9 @@ Global
 		{CAAB55C2-4863-4EAC-A1D6-659D17E6E167} = {69C0D1C1-041B-4645-A4D1-367ACBB7C6AB}
 		{1C1C3D87-67AE-4562-BC32-C0A2F142B3D0} = {B6B8B8D5-8531-441D-BBE1-E00BDEB23DDE}
 		{7603966E-70AB-4EA5-AFBE-031B4CBD7E6E} = {29CBB102-2BEC-4C69-A384-A2C955974570}
+		{212DC7DD-CBC8-49C4-A204-7051932513FA} = {DE0F78D5-ED7A-4493-BB9F-2262FABE8A93}
+		{C7B4B776-3E77-4E1C-B80E-950C2A39F3F1} = {69C0D1C1-041B-4645-A4D1-367ACBB7C6AB}
+		{B38401B7-FF4A-480D-B6AD-DDB48B20FDBA} = {29CBB102-2BEC-4C69-A384-A2C955974570}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {837E0968-71F2-479F-AFC8-3959A5DFE8B5}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notifications.Data.Abstractions\Notifications.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\Notifications.Domain\Notifications.Domain.csproj" />
+    <ProjectReference Include="..\Notifications.Dto\Notifications.Dto.csproj" />
+  </ItemGroup>
+
+</Project>
